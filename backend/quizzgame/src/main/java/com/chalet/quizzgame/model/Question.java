@@ -1,18 +1,21 @@
 package com.chalet.quizzgame.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Question {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer questionId;
 
     private String question;
     private String answer;
 
-    private String choiceAnswer;
+    private String choiceAnswer; // optional, comma-separated
 
     private String url;
 
