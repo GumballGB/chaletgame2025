@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Button } from "./components/Button";
 import { Bomb, Zap, Sparkles, Brain, Lightbulb, X } from "lucide-react";
+import zachImg from "./assets/zach.png";
+import hugoImg from "./assets/Hugo.png";
 
 export default function QuizLanding() {
   const [showRules, setShowRules] = useState(false)
@@ -123,7 +125,7 @@ export default function QuizLanding() {
               },
               {
                 icon: <Lightbulb className="h-12 w-12 text-yellow-500" />,
-                title: " Remeber the good ol' times",
+                title: " Remember the good ol' times",
                 description: " Relive the best moments of the Chalet!",
                 color: "bg-pink-300",
                 rotate: "rotate-1",
@@ -156,7 +158,7 @@ export default function QuizLanding() {
               <div className="space-y-8">
                 {[
                   {
-                    image: "1",
+                    image: hugoImg,
                     title: "Hugo Leduc-Bergeron",
                     description: " ",
                     color: "bg-red-500",
@@ -169,12 +171,12 @@ export default function QuizLanding() {
                   },
                   {
                     image: "3",
-                    title: "Sophia Carbone",
+                    title: "Emir Cruz",
                     description: " ",
                     color: "bg-green-500",
                   },
                   {
-                    image: "4",
+                    image: zachImg,
                     title: "Zachary Roy",
                     description: "Jobless AHHHH quiz",
                     color: "bg-purple-500",
@@ -246,7 +248,7 @@ export default function QuizLanding() {
               size="lg"
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-xl p-8 rounded-xl shadow-lg animate-bounce"
             >
-              <Zap className="mr-2 h-6 w-6" /> TRY YOURM LUCK! <Zap className="ml-2 h-6 w-6" />
+              <Zap className="mr-2 h-6 w-6" /> TRY YOUR LUCK! <Zap className="ml-2 h-6 w-6" />
             </Button>
           </div>
         </div>
