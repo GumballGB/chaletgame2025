@@ -38,7 +38,7 @@ export default function QuizLanding() {
             size="lg"
             className="bg-green-500 hover:bg-green-600 text-white font-extrabold text-2xl px-12 py-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform w-64"
           >
-            JOUER
+            PLAY
           </Button>
 
           <Button
@@ -46,7 +46,7 @@ export default function QuizLanding() {
             className="bg-blue-500 hover:bg-blue-600 text-white font-extrabold text-xl px-8 py-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform w-48"
             onClick={() => setShowRules(true)}
           >
-            RÈGLES
+            RULES
           </Button>
         </div>
       </main>
@@ -64,26 +64,26 @@ export default function QuizLanding() {
               <X className="h-4 w-4" />
             </Button>
 
-            <h2 className="text-2xl font-extrabold text-red-600 mb-4">Règles du Quiz Impossible</h2>
+            <h2 className="text-2xl font-extrabold text-red-600 mb-4">Rule of the Chalet Quiz</h2>
 
             <div className="space-y-4">
               <div className="bg-yellow-100 p-3 rounded-lg border-2 border-yellow-500">
-                <h3 className="font-bold text-lg text-yellow-700">Règle #1</h3>
+                <h3 className="font-bold text-lg text-yellow-700">Rule #1</h3>
                 <p></p>
               </div>
 
               <div className="bg-blue-100 p-3 rounded-lg border-2 border-blue-500">
-                <h3 className="font-bold text-lg text-blue-700">Règle #2</h3>
+                <h3 className="font-bold text-lg text-blue-700">Rule #2</h3>
                 <p></p>
               </div>
 
               <div className="bg-green-100 p-3 rounded-lg border-2 border-green-500">
-                <h3 className="font-bold text-lg text-green-700">Règle #3</h3>
+                <h3 className="font-bold text-lg text-green-700">Rule #3</h3>
                 <p></p>
               </div>
 
               <div className="bg-purple-100 p-3 rounded-lg border-2 border-purple-500">
-                <h3 className="font-bold text-lg text-purple-700">Règle #4</h3>
+                <h3 className="font-bold text-lg text-purple-700">Rule #4</h3>
                 <p></p>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function QuizLanding() {
               className="w-full mt-6 bg-red-500 hover:bg-red-600 text-white font-bold"
               onClick={() => setShowRules(false)}
             >
-              J'ai compris (ou pas!)
+              I understand (or not!)
             </Button>
           </div>
         </div>
@@ -102,29 +102,29 @@ export default function QuizLanding() {
       <section id="regles" className="py-16 bg-blue-500 transform -rotate-1 my-12">
         <div className="container mx-auto transform rotate-1">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-white drop-shadow-lg">
-            Pourquoi Ce quiz?
+            Why this quiz?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 icon: <Brain className="h-12 w-12 text-blue-600" />,
-                title: "",
-                description: "!",
+                title: "Test your knowledge!",
+                description: "Do you know the Chalet lore? Prove it!",
                 color: "bg-yellow-300",
                 rotate: "rotate-2",
               },
               {
                 icon: <Bomb className="h-12 w-12 text-red-600" />,
-                title: "",
-                description: "",
+                title: "Win prizes!",
+                description: "Winners gets to eat a meal prepared by chef Jesse Boyle!",
                 color: "bg-green-300",
                 rotate: "-rotate-1",
               },
               {
                 icon: <Lightbulb className="h-12 w-12 text-yellow-500" />,
-                title: "",
-                description: "",
+                title: " Remeber the good ol' times",
+                description: " Relive the best moments of the Chalet!",
                 color: "bg-pink-300",
                 rotate: "rotate-1",
               },
@@ -148,7 +148,7 @@ export default function QuizLanding() {
       <section id="astuces" className="py-16 relative">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-purple-600">
-            Nos <span className="line-through">Haters</span> Reviews
+            Our <span className="line-through">Haters</span> Reviews
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -238,15 +238,15 @@ export default function QuizLanding() {
       <section className="py-16 relative">
         <div className="container mx-auto text-center relative z-10">
           <div className="bg-white border-4 border-red-600 rounded-xl p-8 shadow-xl max-w-3xl mx-auto transform rotate-1 hover:rotate-0 transition-transform">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-red-600">Prêt à Jouer?</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-red-600">Ready To Play?</h2>
             <p className="text-xl font-bold text-blue-700 mb-8">
-              Rejoignez les milliers de joueurs qui se disputent la chance de gagner un repas du cuistot Jesse Boyle!
+              Join thousands of players to have a chance of winning a meal prepared by chef Jesse Boyle!
             </p>
             <Button
               size="lg"
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-xl p-8 rounded-xl shadow-lg animate-bounce"
             >
-              <Zap className="mr-2 h-6 w-6" /> TENTEZ VOTRE CHANCE! <Zap className="ml-2 h-6 w-6" />
+              <Zap className="mr-2 h-6 w-6" /> TRY YOURM LUCK! <Zap className="ml-2 h-6 w-6" />
             </Button>
           </div>
         </div>
