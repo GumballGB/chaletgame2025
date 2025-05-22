@@ -5,6 +5,9 @@ import { Button } from "./components/Button";
 import { Bomb, Zap, Sparkles, Brain, Lightbulb, X } from "lucide-react";
 import zachImg from "./assets/zach.png";
 import hugoImg from "./assets/Hugo.png";
+import emirImg from "./assets/Emir.jpg";
+import samImg from "./assets/Sam.jpg";
+import squadImg from "./assets/Squad.jpg";
 
 export default function QuizLanding() {
   const [showRules, setShowRules] = useState(false)
@@ -160,19 +163,19 @@ export default function QuizLanding() {
                   {
                     image: hugoImg,
                     title: "Hugo Leduc-Bergeron",
-                    description: " ",
+                    description: "I would rather be playing chess right now.",
                     color: "bg-red-500",
                   },
                   {
-                    image: "2",
+                    image: samImg,
                     title: "Samuel Francisco Brouillette",
-                    description: " ",
+                    description: "  ",
                     color: "bg-blue-500",
                   },
                   {
-                    image: "3",
+                    image: emirImg,
                     title: "Emir Cruz",
-                    description: " ",
+                    description: "I missed school for this shitty quiz ??",
                     color: "bg-green-500",
                   },
                   {
@@ -202,7 +205,7 @@ export default function QuizLanding() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-red-500 to-purple-500 rounded-xl blur opacity-30 animate-pulse"></div>
               <div className="relative bg-white border-4 border-purple-600 rounded-xl p-4 shadow-xl transform -rotate-2">              <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src={squadImg}
                   alt="Démonstration du jeu impossible"
                   className="rounded-lg w-full h-auto"
                 />
