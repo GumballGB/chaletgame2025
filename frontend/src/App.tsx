@@ -7,6 +7,7 @@ import zachImg from "./assets/zach.png";
 import hugoImg from "./assets/Hugo.png";
 import emirImg from "./assets/Emir.jpg";
 import samImg from "./assets/Sam.jpg";
+import jlcImg from "./assets/JLC.jpg";
 import squadImg from "./assets/Squad.jpg";
 
 export default function QuizLanding() {
@@ -182,6 +183,12 @@ export default function QuizLanding() {
                     image: zachImg,
                     title: "Zachary Roy",
                     description: "Jobless AHHHH quiz",
+                    color: "bg-purple-500",
+                  },
+                  {
+                    image: jlcImg,
+                    title: "Jimmy-Lou Clément",
+                    description: "Fuck this quiz im gonna go sleep in Anslean's bed",
                     color: "bg-purple-500",
                   },
                 ].map((step, index) => (
